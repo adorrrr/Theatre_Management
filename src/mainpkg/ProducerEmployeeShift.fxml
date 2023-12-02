@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="763.0" style="-fx-background-color: #F8F3D4;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="mainpkg.ProducerEmployeeShiftController">
+   <children>
+      <AnchorPane layoutX="54.0" layoutY="60.0" prefHeight="371.0" prefWidth="664.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="53.0" layoutY="30.0" text="Employee Shift" textFill="GREEN">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Line endX="48.399993896484375" endY="7.62939453125E-6" layoutX="124.0" layoutY="58.0" startX="-100.0" stroke="GREEN" strokeWidth="3.0" />
+            <TableView fx:id="shiftTable" layoutX="106.0" layoutY="86.0" prefHeight="226.0" prefWidth="462.0">
+              <columns>
+                <TableColumn fx:id="columnName" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="columndept" prefWidth="75.0" text="Department" />
+                  <TableColumn fx:id="columnDate" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="columnShiftStart" prefWidth="75.0" text="Shift Start" />
+                  <TableColumn fx:id="ColumnShiftEnd" prefWidth="75.0" text="Shift End" />
+                  <TableColumn fx:id="columnPresence" prefWidth="75.0" text="Presence" />
+              </columns>
+            </TableView>
+            <Button fx:id="loadData" layoutX="306.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnLoadData" text="Load Data" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="backDashboard" layoutX="21.0" layoutY="14.0" mnemonicParsing="false" onAction="#backProducerDashboard" style="-fx-background-color: red;" text="Back Dashboard">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

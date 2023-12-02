@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.ArtistChatBoxController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="487.0" prefWidth="763.0">
+         <children>
+            <Label layoutX="191.0" layoutY="14.0" prefHeight="30.0" prefWidth="271.0" text="Artist Chat Box">
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font>
+            </Label>
+            <TableView fx:id="TableTableView" layoutX="42.0" layoutY="84.0" prefHeight="200.0" prefWidth="685.0">
+               <columns>
+                  <TableColumn fx:id="DepartmentColumn" prefWidth="148.0" text="Department" />
+                  <TableColumn fx:id="MessageColumn" prefWidth="536.0" text="Massage" />
+               </columns>
+            </TableView>
+            <Button layoutX="496.0" layoutY="294.0" mnemonicParsing="false" onAction="#LoadButtonOnMouseClick" text="Load Notification" />
+            <Button layoutX="496.0" layoutY="359.0" mnemonicParsing="false" onAction="#SentButtonOnMouseClick" prefHeight="44.0" prefWidth="158.0" text="Sent" />
+            <Button layoutX="648.0" layoutY="419.0" mnemonicParsing="false" onAction="#ExitButtonOnMouseClick" prefHeight="44.0" prefWidth="77.0" text="Exit" />
+            <TextField fx:id="DepartmentTextField" layoutX="36.0" layoutY="294.0" prefHeight="44.0" prefWidth="233.0" />
+            <TextField fx:id="MessafeTextField" layoutX="42.0" layoutY="359.0" prefHeight="44.0" prefWidth="408.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

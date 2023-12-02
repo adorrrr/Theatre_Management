@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ProductionManagerCostController">
+   <children>
+      <TableView fx:id="TableTableView" layoutX="52.0" layoutY="177.0" prefHeight="133.0" prefWidth="522.0">
+        <columns>
+          <TableColumn fx:id="DepartmentColumn" prefWidth="215.0" text="Department" />
+          <TableColumn fx:id="CostColumn" prefWidth="220.0" text="Cost" />
+        </columns>
+      </TableView>
+      <Label layoutX="162.0" layoutY="28.0" prefHeight="46.0" prefWidth="383.0" text="Production Manager Cost">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TotalCostTextField" layoutX="188.0" layoutY="335.0" />
+      <Label layoutX="86.0" layoutY="342.0" prefHeight="30.0" prefWidth="62.0" text="Total:" />
+      <Button layoutX="545.0" layoutY="404.0" mnemonicParsing="false" onAction="#ExitButtonOnMouseClick" text="Exit" />
+      <Button layoutX="75.0" layoutY="404.0" mnemonicParsing="false" onAction="#SaveButtonOnMouseClick" text="Save" />
+      <Button layoutX="214.0" layoutY="404.0" mnemonicParsing="false" onAction="#TotalButtonOnMouseClick" text="Total" />
+      <TextField fx:id="DepartmentTextfield" layoutX="117.0" layoutY="98.0" />
+      <TextField fx:id="CostTextField" layoutX="487.0" layoutY="98.0" />
+      <Label layoutX="6.0" layoutY="98.0" text="Department:" />
+      <Label layoutX="405.0" layoutY="105.0" prefHeight="30.0" prefWidth="59.0" text="Cost:" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="763.0" style="-fx-background-color: #F8F3D4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.GeneralManagerFinanceController">
+   <children>
+      <AnchorPane cache="true" layoutX="52.0" layoutY="54.0" prefHeight="380.0" prefWidth="658.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="financeSection" layoutX="14.0" layoutY="14.0" text="Finance Section" textFill="GREEN">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Line endX="54.000030517578125" endY="7.62939453125E-6" layoutX="102.0" layoutY="43.0" startX="-100.0" stroke="GREEN" strokeWidth="3.0" />
+            <Label fx:id="choosefinance" layoutX="79.0" layoutY="60.0" text="Department:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TableView fx:id="budgetTable" layoutX="12.0" layoutY="116.0" prefHeight="164.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="callDepartment" prefWidth="120.79999542236328" text="Department" />
+                <TableColumn fx:id="callBudget" prefWidth="79.20001220703125" text="Budget" />
+              </columns>
+            </TableView>
+            <Label fx:id="lblBudgetTable" layoutX="71.0" layoutY="88.0" text="Budget Table">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="addBudget" layoutX="12.0" layoutY="296.0" mnemonicParsing="false" onAction="#budgetAdd" text="Add" />
+            <Button fx:id="btnCalculateBudget" layoutX="147.0" layoutY="296.0" mnemonicParsing="false" onAction="#calculateBudget" text="Calculate" />
+            <Label fx:id="lblTotalBudgetText" layoutX="14.0" layoutY="337.0" text="Total Budget =" />
+            <TextField fx:id="tblTotalBudget" layoutX="101.0" layoutY="332.0" prefHeight="26.0" prefWidth="102.0" promptText="Amount" />
+            <TableView fx:id="expenseTable" layoutX="229.0" layoutY="116.0" prefHeight="164.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="expensedpt" prefWidth="118.4000244140625" text="Department" />
+                <TableColumn fx:id="expenseCall" prefWidth="80.79998779296875" text="Expense" />
+              </columns>
+            </TableView>
+            <TableView fx:id="Profittable" layoutX="444.0" layoutY="116.0" prefHeight="164.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="callProfitDepartment" prefWidth="126.39999389648438" text="Department" />
+                <TableColumn fx:id="callProfit" prefWidth="72.79998779296875" text="Profit" />
+              </columns>
+            </TableView>
+            <Button fx:id="btncalculateExpense" layoutX="358.0" layoutY="296.0" mnemonicParsing="false" onAction="#expenseCalculate" text="Calculate" />
+            <Label fx:id="lblExpense" layoutX="288.0" layoutY="89.0" text="Expense table">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblProfit" layoutX="512.0" layoutY="89.0" text="Profit Table">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTotalExpensetex" layoutX="236.0" layoutY="337.0" text="Total Expense =" />
+            <TextField fx:id="textExpense" layoutX="331.0" layoutY="333.0" prefHeight="26.0" prefWidth="92.0" promptText="Amount" />
+            <Button fx:id="btnCalculateProfit" layoutX="562.0" layoutY="296.0" mnemonicParsing="false" onAction="#calculateProfit" text="Calculate" />
+            <Label fx:id="lblTotalProfitText" layoutX="444.0" layoutY="337.0" text="Total Profit=" />
+            <TextField fx:id="textProfit" layoutX="535.0" layoutY="333.0" prefHeight="26.0" prefWidth="102.0" promptText="Amount" />
+            <Button fx:id="tblBudgetDelete" layoutX="76.0" layoutY="296.0" mnemonicParsing="false" onAction="#deleteBudget" text="Delete" />
+            <Button fx:id="loadExpense" layoutX="238.0" layoutY="296.0" mnemonicParsing="false" onAction="#budgetLoad" text="Load" />
+            <Button fx:id="loadProfit" layoutX="451.0" layoutY="296.0" mnemonicParsing="false" onAction="#profitLoad" text="Load" />
+            <TextField fx:id="deptName" layoutX="169.0" layoutY="56.0" prefHeight="26.0" prefWidth="180.0" promptText="Department Name" />
+            <Label fx:id="lblBudget" layoutX="373.0" layoutY="60.0" text="Budget:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="showBudget" layoutX="437.0" layoutY="57.0" promptText="Budget" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Button fx:id="backDashboard" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#backOnDashboard" style="-fx-background-color: red;" text="Back Dashboard" textFill="#131212">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

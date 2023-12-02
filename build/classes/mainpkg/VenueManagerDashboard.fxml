@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.VenueManagerDashboardController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="5.0" prefHeight="487.0" prefWidth="763.0">
+         <children>
+            <ImageView fitHeight="351.0" fitWidth="639.0" layoutX="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Theatre_management_system/src/Pictures/c.png" />
+               </image>
+            </ImageView>
+            <BorderPane layoutX="-1.0" prefHeight="487.0" prefWidth="763.0">
+               <top>
+                  <AnchorPane prefHeight="103.0" prefWidth="763.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="84.0" layoutY="52.0" text="Venue Manager Dashboard" textFill="#1100ff">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Line endX="188.0" layoutX="155.0" layoutY="80.0" startX="-71.0" />
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="371.0" prefWidth="190.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button layoutX="17.0" layoutY="14.0" mnemonicParsing="false" onAction="#scheduleButtonOnClick" prefHeight="42.0" prefWidth="159.0" text="Schedule" textFill="#1100ff">
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="15.0" layoutY="113.0" mnemonicParsing="false" onAction="#ticketControlButtonOnClick" prefHeight="42.0" prefWidth="160.0" text="Ticket Control" textFill="#1100ff">
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="15.0" layoutY="164.0" mnemonicParsing="false" onAction="#securityTeamButtonOnClick" prefHeight="42.0" prefWidth="160.0" text="Security Team " textFill="#1100ff">
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="16.0" layoutY="216.0" mnemonicParsing="false" onAction="#AudienceEmergencyHelpButtonOnClick" prefHeight="42.0" prefWidth="160.0" text="Audience Emergency Help " textFill="#1100ff">
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="16.0" layoutY="267.0" mnemonicParsing="false" onAction="#monitoringStatisticsButtonOnClick" prefHeight="42.0" prefWidth="160.0" text="Monitoring Statistics " textFill="#1100ff">
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="15.0" layoutY="318.0" mnemonicParsing="false" onAction="#contuctUsButtonOnClick" prefHeight="42.0" prefWidth="160.0" text="Contuct Us" textFill="#1100ff">
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="15.0" layoutY="64.0" mnemonicParsing="false" onAction="#showDetailsButtonOnClick" prefHeight="42.0" prefWidth="160.0" text="Show Details" textFill="#1100ff">
+                           <font>
+                              <Font name="Berlin Sans FB" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="367.0" prefWidth="548.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="16.0" layoutY="34.0" prefHeight="209.0" prefWidth="541.0" text="&quot;&quot;We're delighted to introduce you to our innovative Venue Manager Dashboard.&#10;An all-in-one platform designed to streamline your venue management tasks and&#10;enhance your ability to orchestrate exceptional events and experiences.&quot;&quot;" textAlignment="CENTER">
+                           <font>
+                              <Font name="Berlin Sans FB" size="14.0" />
+                           </font>
+                        </Label>
+                        <Text fill="#bf0000" layoutX="181.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Welcome Back Chief&quot;">
+                           <font>
+                              <Font name="Berlin Sans FB" size="17.0" />
+                           </font>
+                        </Text>
+                        <Line endX="69.0" layoutX="265.0" layoutY="93.0" startX="-82.0" />
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.MarketingSocialMediaCampaignsController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="5.0" prefHeight="487.0" prefWidth="763.0">
+         <children>
+            <ImageView fitHeight="347.0" fitWidth="595.0" layoutX="255.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Theatre_management_system/src/Pictures/c.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="92.0" layoutY="72.0" text="Social Media Campings Show list" textFill="#1100ff">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="222.0" layoutX="190.0" layoutY="97.0" startX="-100.0" />
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnClick" style="-fx-background-color: blue;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text layoutX="92.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volunteer Name:" />
+            <Text layoutX="93.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Campaigns Location:" />
+            <TextField fx:id="volunteerNameTextField" layoutX="220.0" layoutY="153.0" promptText="Your Name" />
+            <TextField fx:id="campaignsLocationTextField" layoutX="220.0" layoutY="196.0" promptText="Location" />
+            <TableView fx:id="campaignsShowTable" layoutX="92.0" layoutY="273.0" prefHeight="200.0" prefWidth="425.0">
+               <columns>
+                  <TableColumn fx:id="volunteerNameColumn" prefWidth="208.0" text="Volunteer Name" />
+                  <TableColumn fx:id="campaignsLocationColumn" prefWidth="216.0" text="Campaigns Location" />
+               </columns>
+            </TableView>
+            <Button layoutX="220.0" layoutY="231.0" mnemonicParsing="false" onAction="#showListButtonOnClick" style="-fx-border-color: blue;" text="Show List" />
+            <Text layoutX="90.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Those who are selected just fillup the below list:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

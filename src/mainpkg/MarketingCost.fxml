@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.MarketingCostController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="5.0" prefHeight="487.0" prefWidth="763.0">
+         <children>
+            <ImageView fitHeight="361.0" fitWidth="626.0" layoutX="221.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Theatre_management_system/src/Pictures/c.png" />
+               </image>
+            </ImageView>
+            <Text fill="#1500ff" layoutX="74.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost" wrappingWidth="46.46044921875">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="21.0" />
+               </font>
+            </Text>
+            <Line endX="-64.0" layoutX="174.0" layoutY="107.0" startX="-100.0" />
+            <Text layoutX="72.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket Budget:" />
+            <Text layoutX="73.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ticket Coast:" />
+            <TextField fx:id="ticketBudgetTextField" layoutX="165.0" layoutY="129.0" prefHeight="25.0" prefWidth="150.0" promptText="Number 1" />
+            <TextField fx:id="ticketCoastTextField" layoutX="165.0" layoutY="171.0" prefHeight="25.0" prefWidth="150.0" promptText="Number 2" />
+            <Button layoutX="165.0" layoutY="212.0" mnemonicParsing="false" onAction="#addButtonOnClick" style="-fx-border-color: blue;" text="Add" />
+            <Button layoutX="216.0" layoutY="212.0" mnemonicParsing="false" onAction="#subtractButtonOnClick" style="-fx-border-color: blue;" text="Subtract" />
+            <Button layoutX="285.0" layoutY="212.0" mnemonicParsing="false" onAction="#multiplyButtonOnClick" style="-fx-border-color: blue;" text="Multiply" />
+            <TextArea fx:id="resultArea" layoutX="165.0" layoutY="263.0" prefHeight="125.0" prefWidth="259.0" />
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnClick" style="-fx-background-color: blue;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="330.0" layoutY="171.0" mnemonicParsing="false" onAction="#clearButtonOnClick" style="-fx-border-color: red;" text="Clear" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

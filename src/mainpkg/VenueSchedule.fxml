@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.VenueScheduleController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="5.0" layoutY="-4.0" prefHeight="487.0" prefWidth="763.0">
+         <children>
+            <ImageView fitHeight="343.0" fitWidth="539.0" layoutX="248.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Theatre_management_system/src/Pictures/c.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="27.0" text="Show Schedule" textFill="#1d00d7">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="30.0" layoutX="180.0" layoutY="55.0" startX="-108.0" />
+            <DatePicker fx:id="dateDatePicker" layoutX="161.0" layoutY="147.0" promptText="date" />
+            <Button layoutX="161.0" layoutY="218.0" mnemonicParsing="false" onAction="#addButtononClick" prefHeight="39.0" prefWidth="74.0" style="-fx-border-color: blue;" text="Add" />
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackButtonClick" style="-fx-background-color: blue;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TableView fx:id="showScheduleTable" layoutX="21.0" layoutY="264.0" prefHeight="209.0" prefWidth="722.0">
+               <columns>
+                  <TableColumn fx:id="showNameColumn" prefWidth="164.0" text="Show Name" />
+                  <TableColumn fx:id="venueColumn" prefWidth="188.0" text="Venue " />
+                  <TableColumn fx:id="dateColumn" prefWidth="173.0" text="Date" />
+                  <TableColumn fx:id="timeColumn" prefWidth="196.0" text="Time" />
+               </columns>
+            </TableView>
+            <Text layoutX="71.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
+            <Text layoutX="71.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time:" />
+            <ComboBox fx:id="timeComboBox" layoutX="161.0" layoutY="184.0" prefHeight="25.0" prefWidth="174.0" promptText="Choose" />
+            <Text layoutX="71.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venue:" />
+            <Text layoutX="72.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show Name:" />
+            <TextField fx:id="showNameTextField" layoutX="161.0" layoutY="71.0" prefHeight="25.0" prefWidth="174.0" promptText="Which show do you like?" />
+            <TextField fx:id="VenueTextFiled" layoutX="161.0" layoutY="109.0" prefHeight="25.0" prefWidth="174.0" promptText="Choose venue" />
+            <Button layoutX="356.0" layoutY="184.0" mnemonicParsing="false" onAction="#clearButtonOnClick" style="-fx-border-color: green;" text="Clear" />
+            <Button layoutX="270.0" layoutY="218.0" mnemonicParsing="false" onAction="#deleteButtonOnclick" prefHeight="39.0" prefWidth="66.0" style="-fx-border-color: red;" text="Delete" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mainpkg.VanueTicketControlController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="5.0" prefHeight="487.0" prefWidth="763.0">
+         <children>
+            <ImageView fitHeight="308.0" fitWidth="625.0" layoutX="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Theatre_management_system/src/Pictures/c.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="86.0" layoutY="57.0" prefHeight="21.0" prefWidth="194.0" text="Ticket Control " textFill="#1401bf">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="32.0" layoutX="187.0" layoutY="85.0" startX="-100.0" />
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackButtonClick" style="-fx-background-color: blue;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TableView fx:id="TicketControlTable" layoutX="85.0" layoutY="144.0" prefHeight="200.0" prefWidth="594.0">
+               <columns>
+                  <TableColumn fx:id="showNamecolumn" prefWidth="178.0" text="Show Name" />
+                  <TableColumn fx:id="showDateColumn" prefWidth="132.0" text="Show Date" />
+                  <TableColumn fx:id="membershipColumn" prefWidth="148.0" text="Membership" />
+                  <TableColumn fx:id="numberTicketSellColumn" prefWidth="135.0" text="Number of Ticket Sell" />
+               </columns>
+            </TableView>
+            <Button layoutX="85.0" layoutY="106.0" mnemonicParsing="false" onAction="#LoadButtonOnClick" style="-fx-border-color: blue;" text="Load" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

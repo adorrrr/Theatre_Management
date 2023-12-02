@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.GeneralManagerDashboardController">
+   <children>
+      <ImageView fitHeight="526.0" fitWidth="763.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/371494091_1703456513525168_3357706226573528080_n.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="655.0" layoutX="108.0" layoutY="141.0" startX="-100.0" />
+      <Label fx:id="lblRongodoot" layoutX="89.0" layoutY="80.0" text="Rongodoot" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="99.0" layoutX="34.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/400546957_658819036119033_6954651060281875086_n.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnFinance" layoutX="14.0" layoutY="142.0" mnemonicParsing="false" onAction="#goFinance" prefHeight="27.0" prefWidth="113.0" text="Finance">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSchedule" layoutX="14.0" layoutY="184.0" mnemonicParsing="false" onAction="#goSchedule" text="Schedule Check">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnShift" layoutX="14.0" layoutY="229.0" mnemonicParsing="false" onAction="#GoShiftCheck" prefHeight="27.0" prefWidth="113.0" text="Shift Check">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMonthReport" layoutX="14.0" layoutY="271.0" mnemonicParsing="false" onAction="#goReport" text="Monthly Report">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="gmContactList" layoutX="14.0" layoutY="314.0" mnemonicParsing="false" onAction="#btnContactList" prefHeight="27.0" prefWidth="113.0" text="Contact list">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnChat" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" onAction="#chatBox" prefHeight="27.0" prefWidth="113.0" text="Chat Box">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTerm" layoutX="14.0" layoutY="402.0" mnemonicParsing="false" onAction="#goTerm" text="Terms &amp; Conditions">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSignOut" layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onAction="#goSignOut" text="Sign Out">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblDashboard" layoutX="140.0" layoutY="122.0" text="General Manager dashboard" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

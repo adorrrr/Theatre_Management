@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.MakeUpAndHairArtistController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="487.0" prefWidth="763.0">
+         <children>
+            <Label layoutX="15.0" layoutY="71.0" text="Artist Type:" />
+            <Label layoutX="371.0" layoutY="131.0" prefHeight="30.0" prefWidth="99.0" text="Contact" />
+            <Label layoutX="420.0" layoutY="182.0" text="Email:" />
+            <Label layoutX="15.0" layoutY="182.0" text="Shift:" />
+            <Label layoutX="14.0" layoutY="244.0" text="Date:" />
+            <Label layoutX="55.0" layoutY="236.0" />
+            <Label layoutX="420.0" layoutY="244.0" text="Salary:" />
+            <Label layoutX="1.0" layoutY="124.0" text="Name:" />
+            <Button layoutX="46.0" layoutY="429.0" mnemonicParsing="false" onAction="#AddButtonOnMouseClick" text="Add" />
+            <Button layoutX="141.0" layoutY="429.0" mnemonicParsing="false" onAction="#ShowButtonOnMouseClick" text="Show" />
+            <Button layoutX="690.0" layoutY="429.0" mnemonicParsing="false" onAction="#ExitButtonOnMouseClick" text="Exit" />
+            <ComboBox fx:id="ArtistTypeComboBox" layoutX="117.0" layoutY="71.0" prefWidth="150.0" />
+            <ComboBox fx:id="ShiftComboBox" layoutX="86.0" layoutY="175.0" prefWidth="150.0" />
+            <TextField fx:id="NameTextField" layoutX="60.0" layoutY="124.0" />
+            <TextField fx:id="emailTextField" layoutX="487.0" layoutY="175.0" />
+            <TextField fx:id="mobileNumberTextField" layoutX="487.0" layoutY="124.0" />
+            <TextField fx:id="SalaryTextField" layoutX="487.0" layoutY="237.0" />
+            <DatePicker fx:id="DateDatePicker" layoutX="60.0" layoutY="237.0" />
+            <TableView fx:id="TableTableView" layoutX="1.0" layoutY="293.0" prefHeight="128.0" prefWidth="751.0">
+               <columns>
+                  <TableColumn fx:id="ArtistTypeColumn" prefWidth="126.0" text="Artist Type" />
+                  <TableColumn fx:id="NameColumn" prefWidth="78.0" text="Name" />
+                  <TableColumn fx:id="MobileNumberColumn" prefWidth="103.0" text="Contact" />
+                  <TableColumn fx:id="ShiftColumn" minWidth="5.0" prefWidth="95.0" text="Shift" />
+                  <TableColumn fx:id="EmailColumn" prefWidth="114.0" text="Email" />
+                  <TableColumn fx:id="DateColumn" prefWidth="98.0" text="Date" />
+                  <TableColumn fx:id="SalaryColumn" prefWidth="107.0" text="Salary" />
+               </columns>
+            </TableView>
+            <Label layoutX="236.0" layoutY="25.0" prefHeight="40.0" prefWidth="358.0" text="Make Up And Hair Artist">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <Button layoutX="248.0" layoutY="429.0" mnemonicParsing="false" onAction="#DeleteButtonOnMouseClick" text="Delete" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
